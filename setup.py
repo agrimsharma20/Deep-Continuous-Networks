@@ -3,25 +3,19 @@
 
 from setuptools import setup, find_packages
 
-requirements = [
-    "model-tools @ git+https://github.com/brain-score/model-tools",
-    "srf @ git+https://github.com/ntomen/Deep-Continuous-Networks/tree/master/srf",
-    "torchdiffeq @ git+https://github.com/ntomen/Deep-Continuous-Networks/tree/master/torchdiffeq"
-]
 
 setup(
-    name='model-template',
+    name='dcn',
     version='0.1.0',
-    description="An example project for adding brain or base model implementation",
-    author="Franziska Geiger",
-    author_email='fgeiger@mit.edu',
-    url='https://github.com/brain-score/brainscore_model_template',
-    packages=find_packages(exclude=['tests']),
+    description="Setup to add srf and torchdiffeq to environment",
+    author="Agrim Sharma",
+    author_email='agrimsharma20@gmail.com',
+    url='https://github.com/agrimsharma20',
+    packages=find_packages(exclude=['examples', 'info_ODE_solvers']),
     include_package_data=True,
-    install_requires=requirements,
     license="MIT license",
     zip_safe=False,
-    keywords='brain-score template',
+    keywords='DCN_template',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -29,5 +23,4 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3.7',
     ],
-    test_suite='tests',
 )
