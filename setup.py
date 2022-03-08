@@ -10,7 +10,7 @@ setup(
     description="Setup to add srf and torchdiffeq to environment",
     author="Agrim Sharma",
     author_email='agrimsharma20@gmail.com',
-    url='https://github.com/agrimsharma20',
+    url='https://github.com/agrimsharma20/Deep-Continuous-Networks',
     packages=find_packages(exclude=['examples', 'info_ODE_solvers']),
     include_package_data=True,
     license="MIT license",
